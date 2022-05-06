@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador/Decodificador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="./images/Vector.png" alt="">
+        <h1 class="titulo">Encriptador/Desencriptador</h1>
+        <textarea id="texto-ingreso" class="ingreso" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+        <p class="control-texto">Sólo letras minúsculas y sin acentos</p>   
+        <img src="./images/warning.png" alt="" class="simbolo-advertencia">    
+        <div class="container-botones">
+            <button type="button" class="boton" id="encryptar-button">Encriptar</button>
+            <button type="button" class="boton" id="desEncryptar-button">Desencriptar</button>
+        </div>
+             
+        <div class="content-resultado">
+            <textarea id="resultado" class="resultado"></textarea>
+            <img id="imagen-error" class="imagen-error" src="./images/find.png" alt="">
+            <h5 id="cabecera-mensaje" class="cabecera-error">Ningun mensaje fue encontrado</h5>
+            <p id="cuerpo-error" class="cuerpo-error">Ingresa el texto que deseas<br> encriptar o 
+            desencriptar</p>
+            <button type="button" class="boton-copiar" id="copiar-button">Copiar</button>
+        </div>   
+    </div>
+    <script src="./js/procesos.js"></script>
+</body>
+</html>
